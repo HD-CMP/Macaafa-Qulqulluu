@@ -1,0 +1,56 @@
+{
+  "name": "afaan-oromoo-pc-bible",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Macaafa Qulqulluu — Afaan Oromoo Bible Desktop Application",
+  "author": "Macaafa Qulqulluu Team",
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "electron:start": "cross-env NODE_ENV=development electron .",
+    "start": "concurrently -k \"cross-env BROWSER=none npm run dev\" \"wait-on http://localhost:5173 && npm run electron:start\"",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "build": {
+    "appId": "com.macaafa.qulqulluu",
+    "productName": "Macaafa Qulqulluu",
+    "directories": {
+      "output": "release/"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ]
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.3",
+    "cross-env": "^10.1.0",
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "electron-is-dev": "^3.0.1",
+    "oxlint": "^1.71.0",
+    "png-to-ico": "^3.0.2",
+    "tslib": "^2.8.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "wait-on": "^9.0.10"
+  }
+}

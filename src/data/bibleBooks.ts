@@ -1,0 +1,90 @@
+export interface BibleBook {
+  id: string;
+  name: string;
+  abbreviation: string;
+  testament: 'kakuu-moofaa' | 'kakuu-haaraa';
+  chapters: number;
+  englishName: string;
+}
+
+export const BIBLE_BOOKS: BibleBook[] = [
+  // ============ KAKUU MOOFAA (Old Testament) ============
+  { id: 'uumama', name: 'Seera Uumamaa', abbreviation: 'Uum', testament: 'kakuu-moofaa', chapters: 50, englishName: 'Genesis' },
+  { id: 'bauu', name: "Seera Ba'uu", abbreviation: "Ba'u", testament: 'kakuu-moofaa', chapters: 40, englishName: 'Exodus' },
+  { id: 'lewwi', name: 'Seera Lewwitootaa', abbreviation: 'Lew', testament: 'kakuu-moofaa', chapters: 27, englishName: 'Leviticus' },
+  { id: 'lakko', name: 'Seera Lakkoobsaa', abbreviation: 'Lak', testament: 'kakuu-moofaa', chapters: 36, englishName: 'Numbers' },
+  { id: 'kessa', name: 'Seera Keessa Deebii', abbreviation: 'KD', testament: 'kakuu-moofaa', chapters: 34, englishName: 'Deuteronomy' },
+  { id: 'iyaasuu', name: 'Macaafa Iyaasuu', abbreviation: 'Iys', testament: 'kakuu-moofaa', chapters: 24, englishName: 'Joshua' },
+  { id: 'firdii', name: 'Macaafa Firdootaa', abbreviation: 'Frd', testament: 'kakuu-moofaa', chapters: 21, englishName: 'Judges' },
+  { id: 'ruut', name: 'Macaafa Ruut', abbreviation: 'Ruu', testament: 'kakuu-moofaa', chapters: 4, englishName: 'Ruth' },
+  { id: 'saamu1', name: '1 Saamu\'el', abbreviation: '1Sam', testament: 'kakuu-moofaa', chapters: 31, englishName: '1 Samuel' },
+  { id: 'saamu2', name: '2 Saamu\'el', abbreviation: '2Sam', testament: 'kakuu-moofaa', chapters: 24, englishName: '2 Samuel' },
+  { id: 'moot1', name: '1 Moototaa', abbreviation: '1Moo', testament: 'kakuu-moofaa', chapters: 22, englishName: '1 Kings' },
+  { id: 'moot2', name: '2 Moototaa', abbreviation: '2Moo', testament: 'kakuu-moofaa', chapters: 25, englishName: '2 Kings' },
+  { id: 'seena1', name: '1 Seenaa Moototaa', abbreviation: '1SeM', testament: 'kakuu-moofaa', chapters: 29, englishName: '1 Chronicles' },
+  { id: 'seena2', name: '2 Seenaa Moototaa', abbreviation: '2SeM', testament: 'kakuu-moofaa', chapters: 36, englishName: '2 Chronicles' },
+  { id: 'izraa', name: 'Macaafa Izraa', abbreviation: 'Izr', testament: 'kakuu-moofaa', chapters: 10, englishName: 'Ezra' },
+  { id: 'nehe', name: 'Macaafa Nehemiyaa', abbreviation: 'Neh', testament: 'kakuu-moofaa', chapters: 13, englishName: 'Nehemiah' },
+  { id: 'asteer', name: 'Macaafa Asteer', abbreviation: 'Ast', testament: 'kakuu-moofaa', chapters: 10, englishName: 'Esther' },
+  { id: 'iyoob', name: 'Macaafa Iyoob', abbreviation: 'Iyo', testament: 'kakuu-moofaa', chapters: 42, englishName: 'Job' },
+  { id: 'faaruu', name: 'Faaruu Daawit', abbreviation: 'Faa', testament: 'kakuu-moofaa', chapters: 150, englishName: 'Psalms' },
+  { id: 'fakk', name: 'Fakkeenya Solomoon', abbreviation: 'Fak', testament: 'kakuu-moofaa', chapters: 31, englishName: 'Proverbs' },
+  { id: 'lalla', name: 'Lallaba', abbreviation: 'Lal', testament: 'kakuu-moofaa', chapters: 12, englishName: 'Ecclesiastes' },
+  { id: 'weed', name: 'Weedduu Weedduu', abbreviation: 'WeW', testament: 'kakuu-moofaa', chapters: 8, englishName: 'Song of Solomon' },
+  { id: 'isaa', name: 'Isaayaas', abbreviation: 'Isa', testament: 'kakuu-moofaa', chapters: 66, englishName: 'Isaiah' },
+  { id: 'ermi', name: 'Ermiyaas', abbreviation: 'Erm', testament: 'kakuu-moofaa', chapters: 52, englishName: 'Jeremiah' },
+  { id: 'boqo', name: 'Boqonnaa Ermiyaas', abbreviation: 'BoE', testament: 'kakuu-moofaa', chapters: 5, englishName: 'Lamentations' },
+  { id: 'hisqi', name: "Hisqi'el", abbreviation: 'Hisq', testament: 'kakuu-moofaa', chapters: 48, englishName: 'Ezekiel' },
+  { id: 'daani', name: "Daani'el", abbreviation: 'Daan', testament: 'kakuu-moofaa', chapters: 12, englishName: 'Daniel' },
+  { id: 'hoose', name: "Hoose'aa", abbreviation: 'Hoos', testament: 'kakuu-moofaa', chapters: 14, englishName: 'Hosea' },
+  { id: 'yoel', name: "Yo'el", abbreviation: "Yo'l", testament: 'kakuu-moofaa', chapters: 3, englishName: 'Joel' },
+  { id: 'amos', name: 'Amos', abbreviation: 'Amo', testament: 'kakuu-moofaa', chapters: 9, englishName: 'Amos' },
+  { id: 'obaad', name: 'Obaadiyaa', abbreviation: 'Oba', testament: 'kakuu-moofaa', chapters: 1, englishName: 'Obadiah' },
+  { id: 'yoona', name: 'Yoonaas', abbreviation: 'Yoo', testament: 'kakuu-moofaa', chapters: 4, englishName: 'Jonah' },
+  { id: 'miiki', name: 'Miikiyaas', abbreviation: 'Mii', testament: 'kakuu-moofaa', chapters: 7, englishName: 'Micah' },
+  { id: 'naaho', name: 'Naahom', abbreviation: 'Naa', testament: 'kakuu-moofaa', chapters: 3, englishName: 'Nahum' },
+  { id: 'anba', name: 'Anbaaqom', abbreviation: 'Anb', testament: 'kakuu-moofaa', chapters: 3, englishName: 'Habakkuk' },
+  { id: 'sefa', name: 'Sefaaniyaa', abbreviation: 'Sef', testament: 'kakuu-moofaa', chapters: 3, englishName: 'Zephaniah' },
+  { id: 'haage', name: 'Haagee', abbreviation: 'Haa', testament: 'kakuu-moofaa', chapters: 2, englishName: 'Haggai' },
+  { id: 'zakar', name: 'Zakaariyaas', abbreviation: 'Zak', testament: 'kakuu-moofaa', chapters: 14, englishName: 'Zechariah' },
+  { id: 'miilk', name: 'Miilkiyaas', abbreviation: 'Miil', testament: 'kakuu-moofaa', chapters: 4, englishName: 'Malachi' },
+
+  // ============ KAKUU HAARAA (New Testament) ============
+  { id: 'maate', name: 'Maatewos', abbreviation: 'Maa', testament: 'kakuu-haaraa', chapters: 28, englishName: 'Matthew' },
+  { id: 'maar', name: 'Maarqos', abbreviation: 'Maar', testament: 'kakuu-haaraa', chapters: 16, englishName: 'Mark' },
+  { id: 'luqaa', name: 'Luqaas', abbreviation: 'Luq', testament: 'kakuu-haaraa', chapters: 24, englishName: 'Luke' },
+  { id: 'yoha', name: 'Yohaannis', abbreviation: 'Yoh', testament: 'kakuu-haaraa', chapters: 21, englishName: 'John' },
+  { id: 'hojii', name: 'Hojii Ergamootaa', abbreviation: 'HoE', testament: 'kakuu-haaraa', chapters: 28, englishName: 'Acts' },
+  { id: 'rooma', name: 'Roomaa', abbreviation: 'Roo', testament: 'kakuu-haaraa', chapters: 16, englishName: 'Romans' },
+  { id: 'qoro1', name: '1 Qorontos', abbreviation: '1Qor', testament: 'kakuu-haaraa', chapters: 16, englishName: '1 Corinthians' },
+  { id: 'qoro2', name: '2 Qorontos', abbreviation: '2Qor', testament: 'kakuu-haaraa', chapters: 13, englishName: '2 Corinthians' },
+  { id: 'gala', name: 'Galaatiyaa', abbreviation: 'Gal', testament: 'kakuu-haaraa', chapters: 6, englishName: 'Galatians' },
+  { id: 'efes', name: 'Efesoon', abbreviation: 'Efe', testament: 'kakuu-haaraa', chapters: 6, englishName: 'Ephesians' },
+  { id: 'fili', name: 'Filiphisiiyus', abbreviation: 'Fil', testament: 'kakuu-haaraa', chapters: 4, englishName: 'Philippians' },
+  { id: 'qolo', name: 'Qoloosaayis', abbreviation: 'Qol', testament: 'kakuu-haaraa', chapters: 4, englishName: 'Colossians' },
+  { id: 'tasa1', name: '1 Tasaloonqee', abbreviation: '1Tas', testament: 'kakuu-haaraa', chapters: 5, englishName: '1 Thessalonians' },
+  { id: 'tasa2', name: '2 Tasaloonqee', abbreviation: '2Tas', testament: 'kakuu-haaraa', chapters: 3, englishName: '2 Thessalonians' },
+  { id: 'xim1', name: '1 Ximotewos', abbreviation: '1Xim', testament: 'kakuu-haaraa', chapters: 6, englishName: '1 Timothy' },
+  { id: 'xim2', name: '2 Ximotewos', abbreviation: '2Xim', testament: 'kakuu-haaraa', chapters: 4, englishName: '2 Timothy' },
+  { id: 'tiit', name: 'Tiitoo', abbreviation: 'Tii', testament: 'kakuu-haaraa', chapters: 3, englishName: 'Titus' },
+  { id: 'file', name: 'Filemoon', abbreviation: 'Flem', testament: 'kakuu-haaraa', chapters: 1, englishName: 'Philemon' },
+  { id: 'ibro', name: 'Ibrootaa', abbreviation: 'Ibr', testament: 'kakuu-haaraa', chapters: 13, englishName: 'Hebrews' },
+  { id: 'yaaq', name: 'Yaaqoob', abbreviation: 'Yaa', testament: 'kakuu-haaraa', chapters: 5, englishName: 'James' },
+  { id: 'phex1', name: '1 Phexiroos', abbreviation: '1Phe', testament: 'kakuu-haaraa', chapters: 5, englishName: '1 Peter' },
+  { id: 'phex2', name: '2 Phexiroos', abbreviation: '2Phe', testament: 'kakuu-haaraa', chapters: 3, englishName: '2 Peter' },
+  { id: 'yoha1', name: '1 Yohaannis', abbreviation: '1Yoh', testament: 'kakuu-haaraa', chapters: 5, englishName: '1 John' },
+  { id: 'yoha2', name: '2 Yohaannis', abbreviation: '2Yoh', testament: 'kakuu-haaraa', chapters: 1, englishName: '2 John' },
+  { id: 'yoha3', name: '3 Yohaannis', abbreviation: '3Yoh', testament: 'kakuu-haaraa', chapters: 1, englishName: '3 John' },
+  { id: 'yihu', name: 'Yihuudaa', abbreviation: 'Yih', testament: 'kakuu-haaraa', chapters: 1, englishName: 'Jude' },
+  { id: 'mula', name: "Mul'ata Yohaannis", abbreviation: "Mul'", testament: 'kakuu-haaraa', chapters: 22, englishName: 'Revelation' },
+];
+
+export const DAILY_VERSES = [
+  { book: 'Yohaannis', chapter: 3, verse: 16, text: "Waaqayyo addunyaa akkana jaallateef ilma isaa tokko qofaa kennef; inni isa amanu hunduu bade osoo hin turin, lubbu bara baraa akka qabaatu." },
+  { book: 'Faaruu Daawit', chapter: 23, verse: 1, text: "Gooftaan tikse koo dha; wanti na dhibu hin jiru." },
+  { book: 'Roomaa', chapter: 8, verse: 28, text: "Waaqayyoon jaallatan, dubbiin isaa dhaga'amuu isaaniif waamaman, hundi isaaniif gaarii akka ta'u beekna." },
+  { book: 'Isaayaas', chapter: 40, verse: 31, text: "Kan Gooftaa abdatan garuu humna haaraa argatu; akka balalii iddoo guddaa ce'u; fiigan garuu hin daafan, deeman garuu hin hirriiban." },
+  { book: 'Maatewos', chapter: 5, verse: 3, text: "Qalbiin gara Waaqayyootti qajeeluu dhiistanii kan gaddi isaan keessatti jiran, warra gammadan isaan dha, mootummaan Waaqayyoo kan isaan ti." },
+  { book: 'Filiphisiiyus', chapter: 4, verse: 13, text: "Waan hundumaa kan na jabeessuu Kristoos keessa jiran hunda gochuu nan danda'a." },
+  { book: 'Faaruu Daawit', chapter: 46, verse: 1, text: "Waaqayyo tiksee keenya, humna keenya, rakkinni qabamne yeroo gargaarsa ariifataa dha." },
+];

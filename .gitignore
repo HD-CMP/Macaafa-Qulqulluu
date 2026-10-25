@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+release/
+
+# Dev & temp files
+*.log
+*.lock
+clean_icon.js
+missing_verses.json
+sequence_gaps.json
+truly_missing.json
+parse_xml.py
+OromoKitaabaWoyyuuBible.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+
+# TypeScript build info
+*.tsbuildinfo
